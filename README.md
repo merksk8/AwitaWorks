@@ -68,7 +68,6 @@ commandRestore = "restaurar"
 ### 📌Requisitos
 - **Cuenta de bot de Discord ([+info](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token))**
 - **Base de datos MySQL**
-- 
 ---
 
 ### 🔎Enlaces
