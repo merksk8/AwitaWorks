@@ -1,0 +1,4 @@
+mysql.connector
+datetime
+discord
+discord.py-Console
