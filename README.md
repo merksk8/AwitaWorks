@@ -67,7 +67,7 @@ commandRestore = "restaurar"
 
 ### 📌Requisitos
 - **Cuenta de bot de Discord ([+info](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token))**
-- **Base de datos MySQL**
+- **Base de datos MySQL** -> Para usar AwitaWorks necesitas una base de datos MySQL. Puedes usar el archivo awitaworks_database.sql para crear las tablas!
 ---
 
 ### 🔎Enlaces
