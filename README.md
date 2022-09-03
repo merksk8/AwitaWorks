@@ -36,12 +36,36 @@ Una vez el bot responde a los comandos de entrada o salida, puedes reaccionar al
 
 ### Configuración
 El archivo config.py contiene varias configuraciones:
-
+```
 statusText -> Nombre que aparece debajo del nombre de tu usuario que va a actuar de chatbot en Discord.
 commandPrefix -> Prefijo para los comandos. Por defecto "!"
-discordBotToken -> Token de tu usuario bot de Discord. Más información aquí https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token
-databaseUrl -> 
-databaseUser -> 
-databasePassword -> 
-databaseName -> 
+discordBotToken -> Token de tu usuario bot de Discord.
+databaseUrl -> Enlace para la base de datos MySQL (si es en el mismo servidor, localhost)
+databaseUser -> Nombre de usuario para la conexión a la base de datos MySQL
+databasePassword -> Contraseña del usuario para la conexión a la base de datos MySQL
+databaseName -> Nombre de la base de datos MySQL
+```
 
+Además, se pueden configurar todos los comandos.
+```
+commandEnable = "configurarhorario"
+commandDisable = "desconfigurarhorario"
+commandEnter = "entrada"
+commandCheck = "comprobar"
+commandExit = "salida"
+commandTotal = "total"
+commandPagar = "pagar"
+commandHelp = "ayuda"
+commandReset = "reiniciar"
+commandPrice = "precio"
+commandMax = "maximo"
+commandDelete = "eliminar"
+commandRestore = "restaurar"
+```
+
+### Requisitos
+- **Cuenta de bot de Discord ([+info](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token))**
+- **Base de datos MySQL**
+
+### Enlaces
+[Reportar errores](https://github.com/merksk8/AwitaWorks/issues)
