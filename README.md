@@ -1,39 +1,39 @@
 # AwitaWorks
 Chatbot para Discord para gestionar turnos de trabajo para juegos on-line
 
-### Comandos por defecto
+AwitaWorks es un chatbot para Discord que ha sido usado en servidores de GTAV Roleplay, para el control horario de los trabajadores dentro del juego. Permite llevar un control tanto a trabajadores como a empresarios, de forma fácil, y así pagar a final de semana ( o cuando se desee ) las horas trabajadas. Además, permite limitar los trabajadores activos a la vez.
 
-***Los nombres de comandos se pueden cambiar en el archivo de config.py***
+---
+### 📘Comandos por defecto
 
-**Por defecto, los comandos siempre se activan escribiendo "!" delante, ejemplo: !ayuda**
+✏***Los nombres de comandos se pueden cambiar en el archivo de config.py***
 
-#### Sólo administradores de servidor de Discord
-```
-configurarhorario -> Activa el bot en el canal indicado. El bot tiene que tener permisos para el canal.
-desconfigurarhorario -> Desactiva el bot en el canal indicado.
-maximo [número] -> Activa el límite de trabajadores activos en [número] indicado.
-pagar [@usuario] [preciohora] -> Lista las jornadas del [@usuario] y calcula los totales a pagar en relación al [preciohora] ( la respuesta se envía en mensaje privado ) 
-reiniciar [@usuario] -> Reinicia las horas del usuario.
-eliminar [id] -> Elimina el registro por número [id].
-restaurar [id] -> Restaura el registro por número [id].
-clean [número-de-filas] -> Se eliminan [número-de-filas] mensajes en la sala.
-```
+❗**Por defecto, los comandos siempre se activan escribiendo "!" delante, ejemplo: !ayuda**
+
 #### Comandos de usuario
-```
-ayuda -> Muestra la lista de comandos.
-entrar -> Entrar en servicio
-comprobar -> Muestra el tiempo que llevas en el servicio actual
-salir -> Dejas de estar en servicio
-total -> Ver el total de horas de todos los servicios ( la respuesta se envía en mensaje privado )
-reiniciar -> (CUIDADO!) Reinicias todos los servicios, pasados y actuales
-```
+- **ayuda** -> Muestra la lista de comandos.
+- **entrar** -> Entrar en servicio
+- **comprobar** -> Muestra el tiempo que llevas en el servicio actual
+- **salir** -> Dejas de estar en servicio
+- **total** -> Ver el total de horas de todos los servicios ( la respuesta se envía en mensaje privado )
+- **reiniciar** -> (CUIDADO!) Reinicias todos los servicios, pasados y actuales
+
 ### Comandos por reacción
 Una vez el bot responde a los comandos de entrada o salida, puedes reaccionar al mensaje para hacer acciones:
-```
-❌ -> Elimina el registro.
-✔ -> El registro se restaura de nuevo.
-```
+- ❌ -> Elimina el registro.
+- ✔ -> El registro se restaura de nuevo.
 
+#### Sólo administradores de servidor de Discord
+- **configurarhorario** -> Activa el bot en el canal indicado. El bot tiene que tener permisos para el canal.
+- **desconfigurarhorario** -> Desactiva el bot en el canal indicado.
+- **maximo [número]** -> Activa el límite de trabajadores activos en [número] indicado.
+- **pagar [@usuario] [preciohora]** -> Lista las jornadas del [@usuario] y calcula los totales a pagar en relación al [preciohora] ( la respuesta se envía en mensaje privado ) 
+- **reiniciar [@usuario]** -> Reinicia las horas del usuario.
+- **eliminar [id]** -> Elimina el registro por número [id].
+- **restaurar [id]** -> Restaura el registro por número [id].
+- **clean [número-de-filas]** -> Se eliminan [número-de-filas] mensajes en la sala.
+
+---
 ### Configuración
 El archivo config.py contiene varias configuraciones:
 ```
@@ -63,9 +63,13 @@ commandDelete = "eliminar"
 commandRestore = "restaurar"
 ```
 
-### Requisitos
+---
+
+### 📌Requisitos
 - **Cuenta de bot de Discord ([+info](https://github.com/reactiflux/discord-irc/wiki/Creating-a-discord-bot-&-getting-a-token))**
 - **Base de datos MySQL**
+- 
+---
 
-### Enlaces
-[Reportar errores](https://github.com/merksk8/AwitaWorks/issues)
+### 🔎Enlaces
+🐛[Reportar errores](https://github.com/merksk8/AwitaWorks/issues)
